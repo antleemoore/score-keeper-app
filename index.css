@@ -45,10 +45,8 @@ html{
     padding-right: 6rem;
     padding-top: 2rem;
 }
-.container{
-    margin-top: 4em;
-    margin-left: 4em;
-    margin-right: 4em;
+.cardholder{
+    margin: 4em;
 }
 .player1header{
     color:white;
@@ -83,7 +81,6 @@ html{
 }
 .card-header-title{
     justify-content: center;
-
 }
 .is-padding{
     padding-bottom: 8em !important;
