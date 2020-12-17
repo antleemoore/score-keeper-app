@@ -82,6 +82,8 @@ renamePlayer2.addEventListener('click', (e) => {
 resetStats.addEventListener('click', (e) => {
     tableBody.innerHTML = "";
     tableFooter.innerHTML = "";
+    p1.wins=0;
+    p2.wins=0;
 })
 
 // functions
