@@ -107,7 +107,7 @@ thead th{
     margin-right: 100%;
 }
 @media(max-width: 1023px){
-    .container{
+    .cardholder{
         margin: 0;
     }
 }
