@@ -20,20 +20,20 @@
             <div class="card-content">
                 <div class="content">
                     <h1 class="title is-1"><span id="p1display">0</span>    -   <span id="p2display">0</span></h1>
-                    <p>Use these buttons to keep score</p>
+                    <div id="timer">
+                        <label for="istimerenabled">
+                            <input type="checkbox" id="istimerenabled">
+                            Enable Timer?
+                        </label>
+                    </div>
+                    <p style="padding-top: 1em;">Use these buttons below to keep score</p>
                 </div>
                 <label id="winningscore" for="playto" class="label is-medium is-inline">Winning Score</label>
                 <div class="select is-rounded is-small"><select name="" id="playto"></select></div>
-                <span id="check">
-                    <label id="winLabel" class="label is-inline">
-                        <input id="winby2" type="checkbox" >
-                        Win By 2?
-                    </label>
-                </span>
             </div>
 
                 <div class="columns">
-                    <div class="column is-one-quarter">
+                    <div class="column is-one-fifth">
                         <button id="p1button" class="is-primary button card-footer-item"><span class="p1name">Player 1</span></button>
                     </div>
                     <div class="column">
@@ -66,6 +66,14 @@
                         </div>
                         </div>
                         </div>
+                    </div>
+                    <div class="column">
+                        <span id="check">
+                            <label id="winLabel" class="label is-medium is-inline">
+                                <input id="winby2" type="checkbox" >
+                                Win By 2?
+                            </label>
+                        </span>
                     </div>
                 </div>
             </div>
