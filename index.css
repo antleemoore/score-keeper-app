@@ -1,0 +1,129 @@
+#p1button{
+    background-color: rgb(0, 110, 255);
+    width: 100%;
+}
+#p1button:hover{
+    background-color:rgb(0, 217, 255)
+}
+#p2button{
+    background-color: rgb(228, 140, 7);
+    color: white;
+    width: 100%;
+}
+#p2button:hover{
+    background-color:rgb(228, 176, 7);
+}
+#reset{
+    width: 100%;
+}
+#reset:hover{
+    background-color:rgb(250, 117, 56);
+}
+#settings{
+    width: 100%;
+    background-color: purple;
+}
+#settings:hover{
+    background-color:rgb(184, 4, 184);
+}
+#winby2:hover{
+    cursor: pointer;
+}
+#dropdown-menu{
+    border-radius: 3%;
+}
+html{
+    background-color: navy;
+}
+#check{
+    float: right;
+    padding: 2em;
+}
+.card{
+    padding-left: 6rem;
+    padding-bottom: 2rem;
+    padding-right: 6rem;
+    padding-top: 2rem;
+}
+.container{
+    margin-top: 4em;
+    margin-left: 4em;
+    margin-right: 4em;
+}
+.player1header{
+    color:white;
+    border-right: 3px solid white;
+    border-bottom: 3px solid white;
+}
+.player2header{
+    color:white;
+    border-bottom: 3px solid white;
+}
+.hideContents{
+    display: none;
+}
+.button, .dropdown-menu, .dropdown-item , .dropdown-content{
+    width: 100%;
+    background-color: purple;
+    color: white;
+}
+.button:hover{
+    background-color:rgb(184, 4, 184);
+    color: white;
+}
+#settingsbutton{
+    color:white;
+}
+.dropdown{
+    display: block;
+    color: white;
+}
+.content{
+    text-align: center;
+}
+.card-header-title{
+    justify-content: center;
+
+}
+.is-padding{
+    padding-bottom: 6em !important;
+}
+table{
+    table-layout: fixed;
+    width: 100%;
+    margin-top: 0;
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}
+table tr td{
+    border-right: 3px solid white;
+}
+table tr td:last-of-type{
+    border:none;
+}
+tfoot tr{
+    border-top: 3px solid white;
+}
+thead th{
+    margin-right: 100%;
+}
+@media(max-width: 1023px){
+    .container{
+        margin: 0;
+    }
+}
+@media(max-width: 600px){
+    table{
+        font-size: 1.5rem;
+    }
+}
+@media(max-width: 450px){
+    table{
+        font-size: 1rem;
+    }
+    .card{
+        padding: 0;
+    }
+}
