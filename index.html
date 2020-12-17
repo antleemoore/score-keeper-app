@@ -6,6 +6,7 @@
     <title>Score Keeper</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
     <link rel="stylesheet" href="index.css">
+    <link rel="manifest" href="manifest.json">
 </head>
 <body>
     <div class="container">
@@ -32,10 +33,10 @@
 
                 <div class="columns">
                     <div class="column is-one-quarter">
-                        <button id="p1button" class="is-primary button card-footer-item"><span class="p1name">Player 1</span></button>
+                        <button id="p1button" class="is-primary button card-footer-item">+1 <span class="p1name">Player 1</span></button>
                     </div>
                     <div class="column">
-                        <button id="p2button" class="is-secondary button card-footer-item"><span class="p2name">Player 2</span></button>
+                        <button id="p2button" class="is-secondary button card-footer-item">+1 <span class="p2name">Player 2</span></button>
                     </div>
                     <div class="column">
                         <button id="reset" class="is-danger button card-footer-item">Reset</button>
@@ -68,5 +69,10 @@
     </div>
     </div>
     <script src="app.js"></script>
+    <script>
+        if('serviceWorker' in navigator){
+            navigator.serviceWorker.register('/service-worker.js')
+        }
+    </script>
 </body>
 </html>
