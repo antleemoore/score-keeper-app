@@ -37,7 +37,7 @@ html{
 }
 #check{
     float: right;
-    padding: 2em;
+    padding: .75rem;
 }
 .card{
     padding-left: 6rem;
@@ -78,6 +78,7 @@ html{
 }
 .content{
     text-align: center;
+    margin:0 !important;
 }
 .card-header-title{
     justify-content: center;
@@ -110,17 +111,24 @@ thead th{
     .cardholder{
         margin: 0;
     }
+    #timer input[type="number"]{
+        width: 30% !important;
+    }
 }
 @media(max-width: 600px){
     table{
         font-size: 1.5rem;
+    }
+    #timer input[type="number"]{
+        width: 20% !important;
+    }
+    .card{
+        padding: 0;
     }
 }
 @media(max-width: 450px){
     table{
         font-size: 1rem;
     }
-    .card{
-        padding: 0;
-    }
+
 }
