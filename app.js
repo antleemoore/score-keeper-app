@@ -18,13 +18,11 @@ const maxScore = 100;
 const resetButton = document.querySelector('#reset');
 const winningScoreSelect = document.querySelector('#playto');
 const winBy2 = document.querySelector('#winby2');
-
-winBy2.checked = false;
-
 const settings = document.querySelector('.dropdown');
 const renamePlayer1 = document.querySelector('#renameplayer1');
 const renamePlayer2 = document.querySelector('#renameplayer2');
 const card = document.querySelector('.card');
+const resetStats = document.querySelector('#resetstats');
 
 const statsTable = document.createElement('table');
 const tableHead = document.createElement('thead');
@@ -32,6 +30,7 @@ const tableBody = document.createElement('tbody');
 const tableFooter = document.createElement('tfoot');
 const renamePlayerForm = document.createElement('input');
 
+winBy2.checked = false;
 initializeTable(statsTable);
 initializeOptions();
 
@@ -79,6 +78,10 @@ renamePlayer2.addEventListener('click', (e) => {
     }
     p2.name.textContent = p2name;
     p2Header.innerText = p2.name.textContent;
+})
+resetStats.addEventListener('click', (e) => {
+    tableBody.innerHTML = "";
+    tableFooter.innerHTML = "";
 })
 
 // functions
