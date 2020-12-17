@@ -1,6 +1,7 @@
 {
     "name": "VersusScore",
     "short_name": "VSScore",
+    "description": "An app for keeping score between two players",
     "theme_color": "#000000",
     "icons": [
         {
