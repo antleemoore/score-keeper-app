@@ -1,4 +1,4 @@
-# score keeper
+# Score Keeper
 - supports two players and updates score by pressing either player button
 - reset button resets the score
 - once a player reaches the winning score, the game will end and the game results are stored
