@@ -5,3 +5,8 @@
   - the winning score may be modified with the select menu
   - win by 2 will continue the game past the winning score only if the player score difference is less than 2
 - settings include changing both player names and clearing the game results table
+- when timer is enabled:
+  - after timer start:
+    - if timer reaches 0 and both players have same score, the game is a tie
+    - if timer reaches 0 and a player is winning, regardless of win by 2 being enabled, the game ends
+    - if a player reaches the winning score before timer runs out, that player wins and the game ends
