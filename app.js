@@ -110,9 +110,11 @@ timerEnabled.addEventListener('change', () => {
     reset();
     if (timerEnabled.checked === true) {
         timerInput.type = 'number';
+        timerInput.pattern = "[0-9]*";
         timerInput.placeholder = 'min.';
         timerInput.classList.add('input', 'is-primary')
         timerInputSeconds.type = 'number';
+        timerInputSeconds.pattern = "[0-9]*";
         timerInputSeconds.placeholder = 'sec.';
         timerInputSeconds.classList.add('input', 'is-primary')
         timer.appendChild(timerInput);
